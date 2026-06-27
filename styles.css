@@ -1044,6 +1044,10 @@ h1 {
     padding-left: 22px;
   }
 
+  .index2-mobile-hero-test .hero-media {
+    background-position: 32% center;
+  }
+
   .booking-bar {
     grid-template-columns: 1fr;
     width: calc(100% - 28px);
