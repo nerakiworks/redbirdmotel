@@ -13,30 +13,21 @@
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redbird Motel | Amboy, California</title>
-    <meta
-      name="description"
-      content="Redbird Motel is a quiet roadside motel on Historic Route 66 in Amboy, California."
-    />
+    <title>Redbird Motel | Historic Route 66 Desert Motel</title>
+    <meta name="description" content="Redbird Motel captures the glow of a classic Route 66 roadside stop with vintage rooms, desert views, neon nights, and a small gift shop for the road." />
     <link rel="canonical" href="https://www.redbirdmotel.com/" />
     <meta name="theme-color" content="#111111" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.redbirdmotel.com/" />
     <meta property="og:site_name" content="Redbird Motel" />
-    <meta property="og:title" content="Redbird Motel | Historic Route 66 in Amboy, California" />
-    <meta
-      property="og:description"
-      content="A quiet roadside motel stop in the Mojave Desert with clean rooms, simple comforts, and easy access to Historic Route 66."
-    />
-    <meta property="og:image" content="https://www.redbirdmotel.com/assets/redbird-motel-hero-graded.png" />
+    <meta property="og:title" content="Redbird Motel | Historic Route 66 Desert Motel" />
+    <meta property="og:description" content="Redbird Motel captures the glow of a classic Route 66 roadside stop with vintage rooms, desert views, neon nights, and a small gift shop for the road." />
+    <meta property="og:image" content="https://www.redbirdmotel.com/assets/redbird-motel-hero-bird-smaller.png" />
     <meta property="og:image:alt" content="Redbird Motel neon sign glowing beside a desert motel at dusk." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Redbird Motel | Historic Route 66 in Amboy, California" />
-    <meta
-      name="twitter:description"
-      content="A quiet roadside motel stop in the Mojave Desert with clean rooms, simple comforts, and easy access to Historic Route 66."
-    />
-    <meta name="twitter:image" content="https://www.redbirdmotel.com/assets/redbird-motel-hero-graded.png" />
+    <meta name="twitter:title" content="Redbird Motel | Historic Route 66 Desert Motel" />
+    <meta name="twitter:description" content="Redbird Motel captures the glow of a classic Route 66 roadside stop with vintage rooms, desert views, neon nights, and a small gift shop for the road." />
+    <meta name="twitter:image" content="https://www.redbirdmotel.com/assets/redbird-motel-hero-bird-smaller.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,11 +38,11 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="index2-mobile-hero-test">
+  <body class="index2-mobile-hero-test" data-default-page="home">
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="Redbird Motel home">
+      <a class="brand" href="index.html#home" aria-label="Redbird Motel home">
         <span class="brand-logo" aria-hidden="true">
-          <img src="assets/redbird-logo-transparent.png" alt="" />
+          <img src="assets/redbird-header-symbol.png" alt="" />
         </span>
       </a>
 
@@ -62,15 +53,17 @@
       </button>
 
       <nav class="main-nav" data-nav>
-        <a href="#home">Home</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#attractions">Attractions</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#policies">Policies</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a class="reserve-link" href="#contact">Call to Reserve</a>
+        <a href="index.html#home">Home</a>
+        <a href="about/index.html">About</a>
+        <a href="index.html#rooms">Rooms</a>
+        <a href="index.html#amenities">Amenities</a>
+        <a href="index.html#attractions">Attractions</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="shop/index.html">Shop</a>
+        <a href="index.html#policies">Policies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="reserve-link" href="index.html#contact">Call to Reserve</a>
       </nav>
     </header>
 
@@ -88,7 +81,7 @@
                 Your quiet stop in the Mojave Desert. Clean rooms, hot showers, and the open road ahead.
                 Amboy, CA, on Historic Route 66.
               </p>
-              <a class="button primary" href="#contact">Call to Reserve</a>
+              <a class="button primary" href="index.html#contact">Call to Reserve</a>
             </div>
           </div>
         </div>
@@ -96,11 +89,11 @@
         <form class="booking-bar" aria-label="Booking search">
           <label>
             <span>Check-in</span>
-            <input type="date" value="2026-05-24" />
+            <input type="date" data-check-in />
           </label>
           <label>
             <span>Check-out</span>
-            <input type="date" value="2026-05-25" />
+            <input type="date" data-check-out />
           </label>
           <label>
             <span>Guests</span>
@@ -147,6 +140,97 @@
             </div>
           </article>
         </section>
+      </section>
+
+      <section id="about" class="page about-page" data-page>
+        <div class="about-hero">
+          <img src="assets/redbird-motel-hero-bird-smaller.png" alt="Redbird Motel neon sign glowing over a desert roadside motel at dusk" />
+          <div class="about-hero-overlay"></div>
+          <div class="about-hero-copy">
+            <p class="eyebrow">About</p>
+            <h1>About Redbird Motel</h1>
+            <p>Historic Route 66.<br />Timeless roadside charm.</p>
+            <a class="scroll-cue" href="#about-story" aria-label="Scroll to the Redbird Motel story">Scroll</a>
+          </div>
+        </div>
+
+        <div class="about-section about-story" id="about-story">
+          <div class="about-copy">
+            <p class="eyebrow">Our Story</p>
+            <h2>A Quiet Stop Along the Open Road</h2>
+            <p>Along Historic Route 66, every roadside stop carries a story.</p>
+            <p>
+              Redbird Motel was created to capture the quiet charm of classic American motels — glowing signs
+              after dark, desert roads stretching toward the horizon, and the feeling of arriving somewhere
+              between one journey and the next.
+            </p>
+            <p>It is a place shaped by nostalgia, solitude, and the timeless spirit of the open road.</p>
+          </div>
+        </div>
+
+        <div class="about-section about-inspiration">
+          <div class="about-copy">
+            <p class="eyebrow">Our Inspiration</p>
+            <h2>Built From Roadside Memories</h2>
+            <p>
+              Redbird Motel draws inspiration from neon signs, desert sunsets, weathered architecture, vintage
+              postcards, and the small roadside places that stay in memory long after the journey ends.
+            </p>
+          </div>
+          <div class="about-keywords" aria-label="Redbird Motel inspiration keywords">
+            <span>Historic Route 66</span>
+            <span>Mojave Desert</span>
+            <span>Neon Signs</span>
+            <span>Desert Sunsets</span>
+            <span>Vintage Roadside Motels</span>
+            <span>Open Roads</span>
+          </div>
+          <div class="about-image-grid">
+            <figure class="about-image-large">
+              <img src="assets/gallery-route-66.png" alt="Quiet Route 66 desert road stretching toward distant mountains" />
+              <figcaption>Open roads</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/gallery-neon-after-sunset-bird-matched.png" alt="Redbird Motel neon sign glowing at sunset" />
+              <figcaption>Neon after dark</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/gallery-desert-sky.png" alt="Wide desert night sky above distant motel lights" />
+              <figcaption>Desert skies</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="about-section redbird-section">
+          <div class="redbird-symbol-card">
+            <img src="assets/redbird-symbol-about.png" alt="Redbird Motel red bird symbol glowing in red" />
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">The Redbird</p>
+            <h2>A Symbol of the Journey</h2>
+            <p>The redbird represents movement, memory, and the beginning of another journey.</p>
+            <p>
+              Perched above the motel sign, it watches over travelers passing through — a small reminder that
+              every road leads somewhere, even when the destination is still unknown.
+            </p>
+          </div>
+        </div>
+
+        <div class="brand-statement">
+          <blockquote>
+            Not every journey begins with a destination.
+            <span>Sometimes, it begins with a motel.</span>
+          </blockquote>
+        </div>
+
+        <div class="about-section shop-cta-section">
+          <div>
+            <p class="eyebrow">Gift Shop</p>
+            <h2>Take a Piece of the Road With You</h2>
+            <p>Souvenirs designed for those who remember the places between destinations.</p>
+          </div>
+          <a class="button primary" href="shop/index.html">Visit the Gift Shop</a>
+        </div>
       </section>
 
       <section id="rooms" class="page subpage" data-page>
@@ -355,7 +439,7 @@
           <h1>Scenes from the road</h1>
           <div class="gallery-grid">
             <figure class="gallery-tile wide">
-              <img src="assets/gallery-neon-after-sunset.png" alt="Red neon motel sign glowing at sunset beside a desert roadside motel" />
+              <img src="assets/gallery-neon-after-sunset-bird-matched.png" alt="Red neon motel sign glowing at sunset beside a desert roadside motel" />
               <figcaption>Neon after sunset</figcaption>
             </figure>
             <figure class="gallery-tile">
@@ -378,6 +462,57 @@
               <img src="assets/gallery-courtyard-lights.png" alt="Single-story motel courtyard with warm door lights and chairs outside rooms at dusk" />
               <figcaption>Courtyard lights</figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="page subpage" data-page>
+        <div class="page-shell">
+          <p class="eyebrow">Shop</p>
+          <h1>Redbird Motel goods for the road</h1>
+          <p class="page-lead">
+            A small catalog of Redbird Motel designs available through Redbubble. Each item opens in a new tab so you can keep exploring the motel site.
+          </p>
+          <div class="shop-grid" aria-label="Redbird Motel merchandise catalog">
+            <a
+              class="product-card"
+              href="https://www.redbubble.com/i/sticker/Vintage-Redbird-Motel-Neon-Sign-Logo-by-spimme/182106342/7sgk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buy Vintage Redbird Motel Neon Sign Logo sticker on Redbubble"
+            >
+              <img src="assets/shop-redbird-neon-sticker.png" alt="Vintage Redbird Motel neon sign logo sticker product mockup" />
+              <span class="product-type">Sticker</span>
+              <h2>Vintage Neon Sign Logo Sticker</h2>
+              <p>A compact Redbird Motel logo sticker for laptops, bottles, travel cases, and road-trip notebooks.</p>
+              <strong>Buy on Redbubble</strong>
+            </a>
+            <a
+              class="product-card"
+              href="https://www.redbubble.com/i/mug/Vintage-Redbird-Motel-Neon-Sign-Logo-by-spimme/182106342/7yqg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buy Vintage Redbird Motel Neon Sign Logo mug on Redbubble"
+            >
+              <img src="assets/shop-redbird-neon-mug.png" alt="Vintage Redbird Motel neon sign logo ceramic mug product mockup" />
+              <span class="product-type">Mug</span>
+              <h2>Vintage Neon Sign Logo Mug</h2>
+              <p>A ceramic mug with the Redbird Motel neon sign mark, made for early starts and late-night desert coffee.</p>
+              <strong>Buy on Redbubble</strong>
+            </a>
+            <a
+              class="product-card"
+              href="https://www.redbubble.com/i/notebook/Redbird-Motel-Vintage-Diary-by-spimme/182128580/fxz2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buy Redbird Motel Vintage Diary notebook on Redbubble"
+            >
+              <img src="assets/shop-redbird-vintage-diary.png" alt="Redbird Motel Vintage Diary notebook product mockup" />
+              <span class="product-type">Notebook</span>
+              <h2>Redbird Motel Vintage Diary</h2>
+              <p>A Route 66-inspired notebook for mileage logs, roadside sketches, desert notes, and travel memories.</p>
+              <strong>Buy on Redbubble</strong>
+            </a>
           </div>
         </div>
       </section>
@@ -417,6 +552,11 @@
           <h1>Questions before the next mile</h1>
           <div class="faq-list">
             <article>
+              <h2>Is Redbird Motel a real motel?</h2>
+              <p>Redbird Motel is an independent creative brand inspired by the timeless roadside culture of Historic Route 66.</p>
+              <p>While you can't book a room, you can explore our stories, designs, and collectibles inspired by the spirit of the open road.</p>
+            </article>
+            <article>
               <h2>Can I check in late?</h2>
               <p>Front desk hours are 7:00 AM - 10:00 PM. Late arrivals should call before 10:00 PM so the room can be held and arrival details can be arranged.</p>
             </article>
@@ -435,10 +575,6 @@
             <article>
               <h2>Are restaurants and fuel nearby?</h2>
               <p>Services can be limited along this desert stretch of Route 66, and hours may change. Fill up and bring water or snacks before longer drives.</p>
-            </article>
-            <article>
-              <h2>Do you have accessible rooms?</h2>
-              <p>Ground-floor and accessible room options may be available by request. Please call ahead so the front desk can confirm the best fit.</p>
             </article>
           </div>
         </div>
@@ -571,7 +707,7 @@
       <div>
         <strong>Redbird Motel</strong>
         <span>© 2026 Redbird Motel. All rights reserved.</span>
-        <span class="demo-note">Demo website for a fictional motel.</span>
+        <span class="demo-note">Inspired by Historic Route 66.<br />Timeless roadside charm.</span>
       </div>
       <div>
         <strong>Visit</strong>
@@ -585,16 +721,28 @@
       </div>
       <nav aria-label="Footer navigation">
         <strong>Explore</strong>
-        <a href="#rooms">Rooms</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#policies">Policies</a>
-        <a href="#faq">FAQ</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#accessibility">Accessibility</a>
-        <a href="#contact">Contact</a>
+        <a href="about/index.html">About</a>
+        <a href="index.html#rooms">Rooms</a>
+        <a href="index.html#amenities">Amenities</a>
+        <a href="shop/index.html">Shop</a>
+        <a href="index.html#policies">Policies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="index.html#accessibility">Accessibility</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
