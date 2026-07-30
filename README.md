@@ -48,6 +48,7 @@ https://www.redbirdmotel.com
 - Vintage Route 66 inspired visual identity
 - Responsive static website
 - Brand story and About page
+- Motel Journal powered by Markdown entries
 - Gift Shop featuring collectible products
 - Gallery and roadside atmosphere
 - FAQ and Contact pages
@@ -88,6 +89,7 @@ Redbird Motel is built around atmosphere, memory, and the romance of the open ro
 - HTML5
 - CSS3
 - Vanilla JavaScript
+- Jekyll
 - GitHub Pages
 - Google Analytics 4
 
@@ -98,8 +100,15 @@ Redbird Motel is built around atmosphere, memory, and the romance of the open ro
 ```text
 .
 ├── about/
-├── shop/
 ├── assets/
+├── journal/
+│   ├── images/
+│   ├── posts/
+│   ├── index.html
+│   └── journal.css
+├── shop/
+├── _layouts/
+├── _config.yml
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -113,6 +122,84 @@ Redbird Motel is built around atmosphere, memory, and the romance of the open ro
 
 ---
 
+## Journal
+
+The Journal is managed with Markdown files so new entries can be added without editing the main HTML pages.
+
+Add new Journal posts here:
+
+```text
+journal/posts/
+```
+
+Use this filename format:
+
+```text
+YYYY-MM-DD-post-title.md
+```
+
+If the entry has an image, place it here:
+
+```text
+journal/images/
+```
+
+For easier maintenance, use the same base filename for the Markdown file and image file.
+
+Example:
+
+```text
+journal/posts/2026-07-30-hello-world-hello-desert.md
+journal/images/2026-07-30-hello-world-hello-desert.png
+```
+
+Each post should include front matter:
+
+```markdown
+---
+title: "Hello, World. Hello, Desert."
+date: "2026-07-30"
+description: "The first entry from Redbird Motel Journal, written from a quiet evening along Historic Route 66."
+image: "/journal/images/2026-07-30-hello-world-hello-desert.png"
+image_alt: "Redbird Motel neon sign glowing at sunset beside a desert roadside motel"
+---
+
+Post content goes here.
+```
+
+Posts are displayed newest first based on the `date` field.
+
+---
+
+## Local Development
+
+This site is designed for GitHub Pages and uses Jekyll for the Journal.
+
+Run locally with:
+
+```bash
+bundle exec jekyll serve
+```
+
+Or, if Jekyll is installed globally:
+
+```bash
+jekyll serve
+```
+
+Then open the local server address shown in the terminal.
+
+The following folders are generated locally and do not need to be uploaded:
+
+```text
+.jekyll-cache/
+_site/
+```
+
+The `_layouts/` folder is required and should be included in the repository.
+
+---
+
 ## Explore
 
 - 🌐 Website  
@@ -120,6 +207,9 @@ Redbird Motel is built around atmosphere, memory, and the romance of the open ro
 
 - 🛍 Shop  
   https://www.redbirdmotel.com/shop/
+
+- 📝 Journal  
+  https://www.redbirdmotel.com/journal/
 
 - 📖 About  
   https://www.redbirdmotel.com/about/
