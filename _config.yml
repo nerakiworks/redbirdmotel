@@ -1,0 +1,10 @@
+title: Redbird Motel
+url: "https://www.redbirdmotel.com"
+baseurl: ""
+defaults:
+  - scope:
+      path: "journal/posts"
+      type: "pages"
+    values:
+      layout: "journal-post"
+
