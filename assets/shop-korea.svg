@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+<path fill="#fff" d="M0 0h36v24H0z"/>
+<g transform="translate(18 12) rotate(33.69)"><circle r="6" fill="#cd2e3a"/><path d="M-6 0a6 6 0 0 0 12 0A3 3 0 0 0 0 0a3 3 0 0 1-6 0" fill="#0047a0"/></g>
+<g fill="#111">
+<g transform="translate(7 5) rotate(-56.31)"><path d="M-3-2h6v1H-3zM-3 0h6v1H-3zM-3 2h6v1H-3z"/></g>
+<g transform="translate(29 19) rotate(-56.31)"><path d="M-3-2h2.6v1H-3zM.4-2H3v1H.4zM-3 0h2.6v1H-3zM.4 0H3v1H.4zM-3 2h2.6v1H-3zM.4 2H3v1H.4z"/></g>
+<g transform="translate(29 5) rotate(56.31)"><path d="M-3-2h2.6v1H-3zM.4-2H3v1H.4zM-3 0h6v1H-3zM-3 2h2.6v1H-3zM.4 2H3v1H.4z"/></g>
+<g transform="translate(7 19) rotate(56.31)"><path d="M-3-2h6v1H-3zM-3 0h2.6v1H-3zM.4 0H3v1H.4zM-3 2h6v1H-3z"/></g>
+</g></svg>
