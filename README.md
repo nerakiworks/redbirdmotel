@@ -171,32 +171,30 @@ Posts are displayed newest first based on the `date` field.
 
 ---
 
-## Local Development
+## Gift Shop
 
-This site is designed for GitHub Pages and uses Jekyll for the Journal.
+The Gift Shop brings together six Redbird Motel souvenirs: a diary, mug, sticker, keycap keyring, red LED keyring, and bottle opener.
 
-Run locally with:
+Products are available through Redbubble and Marpple. Globe and country icons open the corresponding product pages in a new tab. Marpple products offer English, Korean, and Japanese storefront links.
 
-```bash
-bundle exec jekyll serve
-```
+---
 
-Or, if Jekyll is installed globally:
+## Deployment Notes
 
-```bash
-jekyll serve
-```
+The site is hosted on GitHub Pages and uses Jekyll for the Journal. Upload the contents of the current site folder to the repository root, preserving the existing folder structure.
 
-Then open the local server address shown in the terminal.
+Include `_layouts/`, `_config.yml`, and the images referenced by the pages and Journal entries.
 
-The following folders are generated locally and do not need to be uploaded:
+Local build output and working materials do not need to be uploaded:
 
 ```text
 .jekyll-cache/
 _site/
+assets/shop-references/
+_maintenance/
 ```
 
-The `_layouts/` folder is required and should be included in the repository.
+Unused image drafts can also be omitted after checking that no page references them.
 
 ---
 
